@@ -1,6 +1,6 @@
-# local-rag 🍎
+# Local-RAG 🍎
 
-local-rag is a nutrition analysis and information app that helps you understand the nutritional content of foods and get personalized nutrition advice through a conversational AI assistant.
+Local-RAG is a nutrition analysis and information app that helps you understand the nutritional content of foods and get personalized nutrition advice through a conversational AI assistant.
 
 ## Features
 
@@ -10,9 +10,36 @@ local-rag is a nutrition analysis and information app that helps you understand 
 - **AI-Powered Conversation**: Ask nutrition-related questions and get informed responses
 - **Search Foods**: Browse through a comprehensive database of common foods
 
+## How It Works
+
+Local-RAG combines structured data retrieval with local AI processing to provide nutrition information without dependency on cloud-based LLMs:
+
+1. **Data Retrieval Layer**: 
+   - Uses the USDA FoodData Central API to fetch accurate nutritional data
+   - Organizes foods by categories for easy browsing
+   - Scales nutrient values based on user-specified quantities
+
+2. **Local AI Processing**:
+   - Leverages Ollama to run a smaller, efficient LLM (llama3.2:1b) locally on your machine
+   - Processes natural language queries about nutrition
+   - Maintains context about previously analyzed foods
+   - Generates responses based on scientific nutrition knowledge
+   - Works completely offline once set up
+
+3. **Interactive UI**:
+   - Built with Streamlit for an intuitive, responsive interface
+   - Provides both structured analysis and conversational modes
+   - Visualizes nutrition data through interactive charts
+   - Maintains conversation history for contextual responses
+
+4. **Contextual Understanding**:
+   - Remembers last analyzed food and quantity for follow-up questions
+   - Uses system prompts to guide the AI toward nutrition-focused responses
+   - Maintains conversation state between interactions
+
 ## Demo
 
-![local-rag Demo](https://via.placeholder.com/800x400)
+![Local-RAG Demo](https://via.placeholder.com/800x400)
 
 ## Getting Started
 
