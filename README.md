@@ -39,7 +39,6 @@ Local-RAG combines structured data retrieval with local AI processing to provide
 
 ## Demo
 
-![Local-RAG Demo](https://via.placeholder.com/800x400)
 
 ![image](https://github.com/user-attachments/assets/9bd8ba7e-f62b-4de0-b7fb-14dde31b4784)
 ![image](https://github.com/user-attachments/assets/02ca334a-d70e-48d4-9829-07407bafcf0a)
