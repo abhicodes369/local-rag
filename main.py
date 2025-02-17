@@ -185,7 +185,7 @@ def create_nutrition_chart(nutrition_info):
 
 # Main Application
 def run():
-    st.title("🍎 FoodGO")
+    st.title("Local Rag")
 
     st.sidebar.header("Nutrition Exploration")
 
