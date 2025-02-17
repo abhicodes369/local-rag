@@ -1,0 +1,113 @@
+# local-rag 🍎
+
+local-rag is a nutrition analysis and information app that helps you understand the nutritional content of foods and get personalized nutrition advice through a conversational AI assistant.
+
+## Features
+
+- **Nutrition Analysis**: Get detailed nutritional information for thousands of foods
+- **Custom Quantity Measurement**: Adjust portion sizes to see scaled nutrition values
+- **Visualization**: View nutritional data in easy-to-understand charts
+- **AI-Powered Conversation**: Ask nutrition-related questions and get informed responses
+- **Search Foods**: Browse through a comprehensive database of common foods
+
+## Demo
+
+![local-rag Demo](https://via.placeholder.com/800x400)
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.7 or higher
+- pip (Python package installer)
+- USDA API Key (free to obtain)
+
+### Installation
+
+1. Clone this repository:
+   ```
+   git clone https://github.com/your-username/local-rag.git
+   cd local-rag
+   ```
+
+2. Install the required dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+
+3. Get a USDA API Key:
+   - Visit [USDA FoodData Central API](https://fdc.nal.usda.gov/api-key-signup.html) to sign up for free
+   - Copy your API key
+
+4. Add your API key to the project:
+   - Open `main.py` in your preferred text editor
+   - Replace the empty `API_KEY = ""` with your key: `API_KEY = "your-api-key-here"`
+
+5. Install Ollama:
+   - Follow the instructions at [Ollama's official website](https://ollama.ai/) to install Ollama
+   - Pull the required model:
+     ```
+     ollama pull llama3.2:1b
+     ```
+
+### Running the App
+
+Start the application with:
+```
+streamlit run main.py
+```
+
+The app should open automatically in your default web browser at `http://localhost:8501`.
+
+## How to Use
+
+### Nutrition Analysis Mode
+
+1. Select "Nutrition Analysis" from the sidebar
+2. Choose between "Select from List" or "Custom Food/Recipe"
+3. For "Select from List", pick a food from the dropdown
+4. For "Custom Food/Recipe", type the name of your food or dish
+5. Adjust the quantity as needed (default is 1 serving)
+6. Click "Analyze Nutrition" to see detailed information
+
+### Conversational Mode
+
+1. Select "Conversational Mode" from the sidebar
+2. Type your nutrition-related questions in the chat input
+3. Get AI-generated responses based on nutrition science
+4. Previous conversations will be displayed above
+5. Click "Clear Conversation" in the sidebar to start fresh
+
+## Tips for Best Results
+
+- Use specific food names for more accurate analysis
+- When asking questions, be specific about the food or nutrient you're interested in
+- Adjust quantities to match your actual portions
+- Try comparing different foods by running multiple analyses
+
+## Troubleshooting
+
+**Error: API Key Invalid**
+- Make sure you've correctly added your USDA API key to the code
+
+**No Results Found**
+- Try using more general terms (e.g., "apple" instead of "granny smith apple")
+- Check your spelling
+
+**Ollama Model Not Loading**
+- Ensure Ollama is running in the background
+- Verify you've pulled the correct model (`llama3.2:1b`)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- USDA FoodData Central for providing the nutrition database
+- Streamlit for the web application framework
+- Ollama for the local LLM capabilities
